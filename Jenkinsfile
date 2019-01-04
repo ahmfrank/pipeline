@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                sh "/usr/bin/mvn clean"
+                sh "/bin/mvn clean"
             }
         }
         stage('--test--') {
             steps {
-                sh "/usr/bin/mvn test"
+                sh "/bin/mvn test"
             }
         }
         stage('--package--') {
             steps {
-                sh "/usr/bin/mvn package"
+                sh "/bin/mvn package"
             }
         }
     }
